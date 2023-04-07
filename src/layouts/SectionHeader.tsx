@@ -16,7 +16,7 @@ export default function SectionHeader({
         <div className={`flex items-center justify-center gap-10 ${className}`}>
             <img className="inline-block" src={headerLeft} alt="" />
             <h1
-                className={`text-[#C69C6D] text-7xl inline-block text-center ${titleClassName}`}
+                className={`text-[#C69C6D] text-7xl inline-block font-FontleroyBrown text-center ${titleClassName}`}
             >
                 {title}
             </h1>

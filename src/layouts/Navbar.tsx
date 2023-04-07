@@ -6,19 +6,24 @@ export default function Navbar() {
         <nav className="px-4 h-16 max-w-[60rem] mx-auto flex items-center relative z-10 mt-5">
             <ul className="grid grid-cols-5 text-2xl font-Queen w-full mx-auto max-w-[52rem] mb-2 text-center text-[#381705]">
                 <li className="nav-item">
-                    <a href="#">Docs</a>
+                    <a
+                        target="_blank"
+                        href="https://docs.divinedimension.io/introduction/divine-dimension"
+                    >
+                        Docs
+                    </a>
                 </li>
                 <li className="nav-item">
-                    <a href="#">Dime</a>
+                    <a href="#dime">Dime</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#">Usecases</a>
+                    <a href="#usecases">Usecases</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#">Divine Pod</a>
+                    <a href="#divine-pod">Divine Pod</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#">Tourism</a>
+                    <a href="#tourism">Tourism</a>
                 </li>
             </ul>
             <img

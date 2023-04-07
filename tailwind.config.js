@@ -10,6 +10,7 @@ export default {
                 sans: ["FontleroyBrown", ...defaultTheme.fontFamily.sans],
                 Queen: ["Queen", ...defaultTheme.fontFamily.sans],
                 Papyrus: ["Papyrus", ...defaultTheme.fontFamily.sans],
+                FontleroyBrown: ["FontleroyBrown", ...defaultTheme.fontFamily.sans],
             },
             backgroundImage: {
                 hero: "url('/src/assets/images/hero-bg.png')",

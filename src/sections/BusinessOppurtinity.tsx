@@ -12,7 +12,7 @@ const images = [frame5, frame6, frame3, frame4, frame7, frame1, frame2];
 
 export default function BusinessOppurtinity() {
     return (
-        <section className="py-28 business-opp">
+        <section id="usecases" className="py-28 business-opp">
             <SectionHeader
                 title="Bussiness Opportunities of Divine Dimension"
                 className="my-20 grid grid-cols-[1fr,3fr,1fr]"

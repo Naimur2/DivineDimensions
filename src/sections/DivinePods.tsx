@@ -3,7 +3,10 @@ import divinePods from "../assets/svgs/divine-pods.svg";
 
 export default function DivinePods() {
     return (
-        <section className="grid grid-cols-[2fr,1fr] px-10 py-28 gap-10 devine-pods-bg">
+        <section
+            id="divine-pod"
+            className="grid grid-cols-[2fr,1fr] px-10 py-28 gap-10 devine-pods-bg"
+        >
             <div>
                 <img
                     src={img2}

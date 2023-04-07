@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply scroll-smooth;
+    }
     body {
         @apply bg-[#1A1A1A];
     }
@@ -22,7 +25,7 @@
     }
     @font-face {
         font-family: "FontleroyBrown";
-        src: url("./assets/fonts/FontleroyBrown.ttf") format("truetype");
+        src: url("./assets/fonts/FONTLERO.otf") format("opentype");
         font-weight: 400;
         font-style: normal;
     }
