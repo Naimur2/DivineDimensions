@@ -1,17 +1,11 @@
 import Partner from "src/layouts/Partner";
 import SectionHeader from "src/layouts/SectionHeader";
+import partnersBg from "src/assets/svgs/partners-bg.svg";
 
 export default function Partners() {
     return (
-        <section className="py-28 partnersBg relative">
-            <div
-                className="relative before:content-empty before:block before:bg-partnersRect before:absolute before:top-[2.4rem] before:bottom-[8rem]
-             before:z-30  before:bg-no-repeat before:bg-contain before:left-[9.5rem] before:w-[25rem] before:bg-center
-
-             after:block after:bg-partnersRectRight after:absolute after:top-[2.4rem] after:bottom-[8rem]
-             after:z-30  after:bg-no-repeat after:bg-contain after:right-[9.5rem] after:w-[25rem] after:bg-center
-             "
-            >
+        <section className="py-28 partnersBg relative z-10">
+            <div className="relative">
                 <SectionHeader title="Our Partners" />
                 <div className="flex items-center justify-center gap-6 my-6">
                     <Partner icon="aptos" />
@@ -24,6 +18,11 @@ export default function Partners() {
                     <Partner icon="investors" />
                 </div>
             </div>
+            <img
+                src={partnersBg}
+                alt=""
+                className="absolute top-0 pt-[9.3rem] max-h-[51rem] left-0 right-0 mx-auto -z-10"
+            />
         </section>
     );
 }
