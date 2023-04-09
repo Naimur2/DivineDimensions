@@ -1,3 +1,4 @@
+import topLeft from "./assets/svgs/top-left.svg";
 import Role from "./components/Role";
 import BusinessOppurtinity from "./sections/BusinessOppurtinity";
 import CulturalEthnicity from "./sections/CulturalEthnicity";
@@ -7,7 +8,16 @@ import Hero from "./sections/Hero";
 import Home from "./sections/Home";
 import Partners from "./sections/Partners";
 import TokenEconomics from "./sections/TokenEconomics";
-import topLeft from "./assets/svgs/top-left.svg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+    duration: 500,
+    delay: 1000,
+    offset: -100,
+    throttleDelay: 99,
+});
 
 export default function App() {
     return (

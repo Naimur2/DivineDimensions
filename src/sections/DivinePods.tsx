@@ -7,14 +7,17 @@ export default function DivinePods() {
             id="divine-pod"
             className="grid grid-cols-[2fr,1fr] px-10 py-28 gap-10 devine-pods-bg"
         >
-            <div>
+            <div data-aos="zoom-out-right">
                 <img
                     src={img2}
                     alt=""
                     className="object-cover w-full h-full "
                 />
             </div>
-            <div className="flex flex-col justify-center items-center px-6 gap-4">
+            <div
+                data-aos="zoom-out-left"
+                className="flex flex-col justify-center items-center px-6 gap-4 "
+            >
                 <div className="grid gap-2">
                     <h1 className="text-[#E2B588] text-[3.5rem]">
                         Introducing Divine Pods

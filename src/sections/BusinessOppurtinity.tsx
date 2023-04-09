@@ -23,6 +23,8 @@ export default function BusinessOppurtinity() {
                         key={index.toString() + image}
                         src={image}
                         alt="frame"
+                        data-aos="fade-up"
+                        data-aos-delay={index * 100}
                     />
                 ))}
             </div>

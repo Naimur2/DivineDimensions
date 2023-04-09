@@ -18,12 +18,15 @@ export default function CulturalEthnicity() {
                     title="Cultural ethnicity without borders"
                     className="mt-20"
                 />
-                <h2 className="text-[#E2B588] text-[1.75rem] leading-[2.5rem] font-Papyrus text-center">
+                <h2
+                    data-aos="fade-up"
+                    className="text-[#E2B588] text-[1.75rem] leading-[2.5rem] font-Papyrus text-center"
+                >
                     Discover diverse traditional culture with Divine Dimension
                 </h2>
             </div>
             <div className="flex justify-center items-center flex-col gap-6">
-                <img src={ce1} alt="Cultural ethnicity" />
+                <img data-aos="fade-up" src={ce1} alt="Cultural ethnicity" />
 
                 <div className="flex flex-wrap justify-between gap-6">
                     {images.map((image, index) => (
@@ -31,11 +34,13 @@ export default function CulturalEthnicity() {
                             key={index.toString() + image}
                             src={image}
                             alt="frame"
+                            data-aos="fade-up"
+                            data-aos-delay={index * 100}
                         />
                     ))}
                 </div>
 
-                <img src={ce2} alt="Cultural ethnicity" />
+                <img data-aos="fade-up" src={ce2} alt="Cultural ethnicity" />
             </div>
         </section>
     );

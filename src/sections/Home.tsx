@@ -3,7 +3,7 @@ import img1 from "../assets/images/img1.png";
 export default function Home() {
     return (
         <article className="grid grid-cols-[2fr,1fr] p-10 gap-10">
-            <div>
+            <div data-aos="zoom-out-right">
                 <img
                     src={img1}
                     alt=""
@@ -18,6 +18,7 @@ export default function Home() {
                             after:content-empty after:block after:bg-quoteEnd after:w-8 after:h-8 
                             after:bg-contain after:bg-no-repeat after:bg-center after:ml-auto
                             "
+                    data-aos="zoom-out-left"
                 >
                     Experience the beauty of world tourism destinations in a
                     whole new dimension with

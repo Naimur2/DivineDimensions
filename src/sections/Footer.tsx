@@ -5,15 +5,18 @@ import SocialIcon from "../components/SocialIcon";
 import SectionHeader from "../layouts/SectionHeader";
 
 const socialIcons = [
-    "twitter",
-    "discord",
-    "instagram",
-    "github",
-    "medium",
-    "book",
-    "youtube",
-    "reddit",
-    "facebook",
+    { icon: "twitter", href: "https://twitter.com/DivineDimeVerse" },
+    { icon: "discord", href: "https://discord.com/invite/2EFMpZCZ2k" },
+    { icon: "instagram", href: "https://www.instagram.com/divinedimeverse/" },
+    { icon: "github", href: "https://github.com/DivineDimension" },
+    { icon: "medium", href: "https://medium.com/@DivineDimension" },
+    { icon: "book", href: "https://docs.divinedimension.io/" },
+    {
+        icon: "youtube",
+        href: "https://www.youtube.com/channel/UCGmSvLWGKiFvzjZHBDG686Q",
+    },
+    { icon: "reddit", href: "https://www.reddit.com/r/divinedimension" },
+    { icon: "facebook" },
 ];
 
 export default function Footer() {
@@ -21,8 +24,13 @@ export default function Footer() {
         <footer className="py-8 bg-footerBg">
             <SectionHeader title="Social Network" className="mt-20" />
             <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto">
-                {socialIcons.map((icon) => (
-                    <SocialIcon key={icon} icon={icon as any} />
+                {socialIcons.map((icon, index) => (
+                    <SocialIcon
+                        key={icon.icon}
+                        icon={icon.icon as any}
+                        animationDelay={index * 100}
+                        href={icon?.href}
+                    />
                 ))}
             </div>
             <div className="flex items-center flex-col gap-6">

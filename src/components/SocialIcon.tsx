@@ -26,17 +26,23 @@ interface Props {
     className?: string;
     href?: string;
     icon: keyof typeof icons;
+    animationDelay?: number;
 }
 
 export default function SocialIcons({
     className = "",
     href = "#",
     icon,
+    animationDelay = 10,
 }: Props) {
+    console.log(href);
     return (
         <a
             className={`flex justify-self-start  items-center justify-center relative h-[8rem] w-[8rem] z-10 ${className}`}
             href={href}
+            data-aos="fade-up"
+            data-aos-delay={animationDelay}
+            target="_blank"
         >
             <img
                 src={socialMediaBg}

@@ -18,6 +18,7 @@ export default function Partner({
 }: PartnerProps) {
     return (
         <div
+            data-aos="zoom-in"
             className={`bg-partnersFrame bg-no-repeat bg-contain h-full min-h-[10rem] sm:min-h-[17rem]
              w-full max-w-[17rem] inline-flex items-center justify-center ${className}`}
         >
