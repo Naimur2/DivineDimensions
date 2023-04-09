@@ -19,7 +19,7 @@ export default function SectionHeader({
         >
             <img className="inline-block" src={headerLeft} alt="" />
             <h1
-                className={`text-[#C69C6D] text-7xl inline-block font-FontleroyBrown text-center ${titleClassName}`}
+                className={`text-[#C69C6D] text-4xl lg:text-7xl inline-block font-FontleroyBrown text-center ${titleClassName}`}
             >
                 {title}
             </h1>

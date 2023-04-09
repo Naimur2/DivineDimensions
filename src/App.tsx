@@ -22,17 +22,13 @@ AOS.init({
 export default function App() {
     return (
         <div className="container mx-auto py-4 relative">
-            <Role className="-mb-3" />
+            <Role className="-mb-6 lg:-mb-3" />
             <main
-                className={`mx-[5.65rem] relative 
-             before:content-empty before:bg-sideBorder before:bg-no-repeat before:bg-cover
-              before:absolute before:top-0 before:-left-2 before:h-full before:bottom-0 before:w-[0.5rem] before:z-[10001] 
-
-              after:content-empty after:bg-sideBorder after:bg-no-repeat after:bg-cover
-              after:absolute after:top-0 after:-right-2 after:h-full after:bottom-0 after:w-[0.5rem] after:z-[10001] 
-            `}
+                className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design `}
             >
-                <section className={`grid gap-28 pb-8 heroBg`}>
+                <section
+                    className={`grid gap-10 xl:gap-20 2xl:gap-28 pb-8 heroBg`}
+                >
                     <Hero />
                     <Home />
                 </section>
@@ -42,10 +38,18 @@ export default function App() {
                 <TokenEconomics />
                 <Partners />
                 <Footer />
-                <img src={topLeft} className="absolute top-0 left-0" alt="" />
                 <img
                     src={topLeft}
-                    className="absolute top-0 right-0 rotate-90"
+                    className="absolute top-0 left-0 
+                w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] md:w-[7rem] md:h-[7rem] lg:w-[8rem] lg:h-[8rem] 2xl:w-[10rem] 2xl:h-[10rem]
+                "
+                    alt=""
+                />
+                <img
+                    src={topLeft}
+                    className="absolute top-0 right-0 rotate-90
+                    w-[4rem] h-[4rem] sm:w-[5rem] sm:h-[5rem] md:w-[7rem] md:h-[7rem] lg:w-[8rem] lg:h-[8rem] 2xl:w-[10rem] 2xl:h-[10rem]
+                    "
                     alt=""
                 />
             </main>

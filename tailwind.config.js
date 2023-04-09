@@ -26,6 +26,7 @@ export default {
                 partnersRect: "url('src/assets/svgs/pr-left.svg')",
                 partnersRectRight: "url('src/assets/svgs/pr-right.svg')",
                 sideBorder: "url('/src/assets/svgs/side-border.svg')",
+                socialMediaBg: "url('/src/assets/svgs/socialmedia-bg.svg')",
             },
             content: {
                 empty: "''",

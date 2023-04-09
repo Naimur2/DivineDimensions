@@ -35,21 +35,28 @@ export default function SocialIcons({
     icon,
     animationDelay = 10,
 }: Props) {
-    console.log(href);
     return (
         <a
-            className={`flex justify-self-start  items-center justify-center relative h-[8rem] w-[8rem] z-10 ${className}`}
+            className={`flex gap-2 justify-self-start  items-center justify-center 
+            relative h-20 w-20 2xl:h-[8rem] 2xl:w-[8rem]  z-10 
+            bg-socialMediaBg  bg-no-repeat bg-center bg-cover 
+            ${className}
+            `}
             href={href}
             data-aos="fade-up"
             data-aos-delay={animationDelay}
             target="_blank"
         >
-            <img
+            {/* <img
                 src={socialMediaBg}
                 alt=""
                 className="absolute object-contain h-full w-full -z-10"
+            /> */}
+            <img
+                src={icons[icon] ?? icons.discord}
+                alt=""
+                className="object-contain h-6 w-6 xl:h-8 xl:w-8"
             />
-            <img src={icons[icon] ?? icons.discord} alt="" />
         </a>
     );
 }

@@ -21,9 +21,12 @@ const socialIcons = [
 
 export default function Footer() {
     return (
-        <footer className="py-8 bg-footerBg">
-            <SectionHeader title="Social Network" className="mt-20" />
-            <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto">
+        <footer className="py-8 bg-footerBg px-4">
+            <SectionHeader
+                title="Social Network"
+                className="mt-20 grid grid-cols-3 place-items-center xl:flex"
+            />
+            <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto justify-center">
                 {socialIcons.map((icon, index) => (
                     <SocialIcon
                         key={icon.icon}
@@ -35,12 +38,14 @@ export default function Footer() {
             </div>
             <div className="flex items-center flex-col gap-6">
                 <img className="mx-auto" src={footerSeparator} alt="" />
-                <div className="flex items-center gap-10 py-4">
+                <div className="grid grid-cols-[1fr,4fr,1fr] xl:flex items-center gap-10 py-4 px-6">
                     <img className="inline-block" src={copyrightLeft} alt="" />
-                    <h1 className="text-[#C69C6D] text-5xl inline-block text-center">
+                    <h1 className="text-[#C69C6D] text-xl lg:text-3xl 2xl:text-5xl inline-block text-center">
                         Copyright
                         <img
-                            className="inline-block mx-3"
+                            className="inline-block mx-3
+                            w-4 h-4 xl:w-6 xl:h-6 2xl:w-8 2xl:h-8
+                            "
                             src={copyrightIcon}
                             alt="copyrightIcon"
                         />

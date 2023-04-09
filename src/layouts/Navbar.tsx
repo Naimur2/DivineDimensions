@@ -3,8 +3,14 @@ import navImage from "../assets/svgs/nav-bg.svg";
 
 export default function Navbar() {
     return (
-        <nav className="px-4 h-16 max-w-[60rem] mx-auto flex items-center relative z-10 mt-5">
-            <ul className="grid grid-cols-5 text-2xl font-Queen w-full mx-auto max-w-[52rem] mb-2 text-center text-[#381705]">
+        <nav
+            className="px-4 h-16 max-w-[26rem] sm:max-w-[40rem] 2xl:max-w-[60rem] mx-auto flex items-center relative z-10 mt-5"
+            data-aos="fade-up"
+        >
+            <ul
+                className="grid grid-cols-5 text-xs sm:text-base lg:text-lg 2xl:text-2xl font-Queen w-full mx-auto
+             max-w-[25rem] sm:max-w-[30rem] 2xl:max-w-[52rem] mb-1 lg:mb-2 text-center text-[#381705]"
+            >
                 <li className="nav-item">
                     <a
                         target="_blank"
@@ -29,7 +35,7 @@ export default function Navbar() {
             <img
                 src={navImage}
                 alt="nav-bg"
-                className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+                className="absolute top-0 left-0 w-full h-full object-contain z-[-1] "
             />
         </nav>
     );

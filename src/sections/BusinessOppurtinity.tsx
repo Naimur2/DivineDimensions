@@ -17,7 +17,7 @@ export default function BusinessOppurtinity() {
                 title="Bussiness Opportunities of Divine Dimension"
                 className="my-20 grid grid-cols-[1fr,3fr,1fr]"
             />
-            <div className="flex flex-wrap justify-center gap-6">
+            <div className="flex flex-wrap justify-center gap-6 px-8">
                 {images.map((image, index) => (
                     <img
                         key={index.toString() + image}

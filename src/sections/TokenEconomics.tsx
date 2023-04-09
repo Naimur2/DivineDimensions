@@ -6,15 +6,18 @@ export default function TokenEconomics() {
     return (
         <section id="dime" className="py-28 token-eco-bg">
             <div className="mb-20">
-                <SectionHeader title="Token Economics" className="mt-20" />
+                <SectionHeader
+                    title="Token Economics"
+                    className="mt-20 grid grid-cols-3 xl:flex"
+                />
                 <h2
                     data-aos="fade-up"
-                    className="text-[#E2B588] text-[1.75rem] leading-[2.5rem] font-Papyrus text-center"
+                    className="text-[#E2B588] text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[2.5rem] font-Papyrus text-center mt-4"
                 >
                     Introducing first 3D Asset class
                 </h2>
             </div>
-            <div className="grid grid-cols-2 gap-4 ">
+            <div className="grid grid-cols-2 gap-4 px-6 xl:px-8">
                 <div className="flex justify-end">
                     <img
                         src={tokenEconomics1}

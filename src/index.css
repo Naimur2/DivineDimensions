@@ -30,7 +30,7 @@
         font-style: normal;
     }
     .nav-item {
-        @apply after:content-empty relative after:absolute after:w-[2px] after:h-full after:right-0 after:block after:bg-black after:top-0 last:after:hidden;
+        @apply after:content-empty relative after:absolute after:w-[1px] lg:after:w-[2px] after:h-full after:right-0 after:block after:bg-black after:top-0 last:after:hidden;
     }
 
     .devine-pods-bg {
@@ -98,5 +98,13 @@
             ),
             url(./assets/images/img6.png) no-repeat center top;
         background-size: cover;
+    }
+
+    .top-design {
+        @apply before:content-empty before:bg-sideBorder before:bg-no-repeat before:bg-cover
+        before:absolute before:top-0 before:-left-2 before:h-full before:bottom-0 before:w-[0.5rem] before:z-[10001] 
+
+        after:content-empty after:bg-sideBorder after:bg-no-repeat after:bg-cover
+        after:absolute after:top-0 after:-right-2 after:h-full after:bottom-0 after:w-[0.5rem] after:z-[10001];
     }
 }
