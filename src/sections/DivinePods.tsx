@@ -16,16 +16,16 @@ export default function DivinePods() {
             </div>
             <div
                 data-aos="zoom-out-left"
-                className="flex flex-col justify-center items-center px-6 gap-4 "
+                className="flex flex-col justify-center items-center px-6 gap-4 row-start-1 lg:row-start-auto"
             >
                 <div className="grid gap-2">
-                    <h1 className="text-[#E2B588] text-[3.5rem] text-center">
+                    <h1 className="text-[#E2B588] text-4xl lg:text-6xl text-center">
                         Introducing Divine Pods
                     </h1>
                     <img src={divinePods} alt="divinePods" />
                 </div>
                 <div className="grid gap-4">
-                    <h2 className="text-[#E2B588] text-[1.75rem] leading-[4.5rem] font-Papyrus text-center ">
+                    <h2 className="text-[#E2B588] text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[3.5rem] font-Papyrus text-center ">
                         Experience the world beauty in 4D like never before
                     </h2>
                 </div>

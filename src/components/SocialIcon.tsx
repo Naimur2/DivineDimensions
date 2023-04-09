@@ -39,7 +39,7 @@ export default function SocialIcons({
         <a
             className={`flex gap-2 justify-self-start  items-center justify-center 
             relative h-20 w-20 2xl:h-[8rem] 2xl:w-[8rem]  z-10 
-            bg-socialMediaBg  bg-no-repeat bg-center bg-cover 
+            bg-socialMediaBg  bg-no-repeat bg-center bg-cover  mx-auto hover-scale
             ${className}
             `}
             href={href}

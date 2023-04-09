@@ -79,7 +79,7 @@
                 #000000 100%
             ),
             url(./assets/images/hero-bg.png) no-repeat center top;
-        background-size: 100% auto;
+        @apply bg-cover xl:bg-contain;
     }
     .cultureBg {
         background: linear-gradient(
@@ -106,5 +106,27 @@
 
         after:content-empty after:bg-sideBorder after:bg-no-repeat after:bg-cover
         after:absolute after:top-0 after:-right-2 after:h-full after:bottom-0 after:w-[0.5rem] after:z-[10001];
+    }
+
+    .circ-animation {
+        max-height: 0;
+        overflow: hidden;
+        animation: circular-page-open 4s ease-in-out forwards 0.5s;
+        transform-origin: top;
+    }
+
+    @keyframes circular-page-open {
+        0% {
+            max-height: 0;
+            overflow: hidden;
+        }
+        100% {
+            max-height: 10000vh;
+            overflow: visible;
+        }
+    }
+
+    .hover-scale {
+        @apply transition-all duration-300 ease-in-out transform hover:scale-110;
     }
 }

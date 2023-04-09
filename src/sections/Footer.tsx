@@ -26,7 +26,7 @@ export default function Footer() {
                 title="Social Network"
                 className="mt-20 grid grid-cols-3 place-items-center xl:flex"
             />
-            <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto justify-center">
+            <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto justify-center place-items-center">
                 {socialIcons.map((icon, index) => (
                     <SocialIcon
                         key={icon.icon}

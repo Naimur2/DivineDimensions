@@ -38,6 +38,7 @@ export default function CulturalEthnicity() {
                             alt="frame"
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
+                            className="hover-scale"
                         />
                     ))}
                 </div>

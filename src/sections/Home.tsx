@@ -10,7 +10,7 @@ export default function Home() {
                     className="object-contain w-full h-full "
                 />
             </div>
-            <div className="flex items-center justify-center px-8">
+            <div className="flex items-center justify-center px-8 ">
                 <h1
                     className="text-[#E2B588] text-3xl  lg:text-4xl 2xl:text-5xl max-w-[20ch] lg:max-w-[15ch] leading-[5rem]
                             before:content-empty before:block before:bg-quoteStart before:w-8 before:h-8 

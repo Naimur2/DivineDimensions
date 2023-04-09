@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import topLeft from "./assets/svgs/top-left.svg";
 import Role from "./components/Role";
 import BusinessOppurtinity from "./sections/BusinessOppurtinity";
@@ -20,11 +21,14 @@ AOS.init({
 });
 
 export default function App() {
+    const mainSectionRef = useRef<HTMLDivElement>(null);
+
     return (
         <div className="container mx-auto py-4 relative">
             <Role className="-mb-6 lg:-mb-3" />
             <main
-                className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design `}
+                className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design main-section circ-animation`}
+                ref={mainSectionRef}
             >
                 <section
                     className={`grid gap-10 xl:gap-20 2xl:gap-28 pb-8 heroBg`}
@@ -54,7 +58,7 @@ export default function App() {
                 />
             </main>
 
-            <Role className="-mt-3" />
+            <Role className="-mt-6 lg:-mt-3" />
         </div>
     );
 }
