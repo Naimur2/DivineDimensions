@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import topLeft from "./assets/svgs/top-left.svg";
 import Role from "./components/Role";
 import BusinessOppurtinity from "./sections/BusinessOppurtinity";
@@ -13,15 +13,46 @@ import TokenEconomics from "./sections/TokenEconomics";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-AOS.init({
-    duration: 500,
-    delay: 1000,
-    offset: -100,
-    throttleDelay: 99,
-});
-
 export default function App() {
     const mainSectionRef = useRef<HTMLDivElement>(null);
+
+    React.useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            offset: 120,
+        });
+    }, []);
+
+    React.useEffect(() => {
+        document.querySelectorAll("img").forEach((img) => {
+            img.addEventListener("load", () => {
+                AOS.refresh();
+            });
+        });
+    }, []);
+
+    React.useEffect(() => {
+        const mainSection = mainSectionRef.current;
+        if (mainSection) {
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            AOS.refresh();
+                        }
+                    });
+                },
+                {
+                    root: null,
+                    rootMargin: "0px",
+                    threshold: 1.0,
+                }
+            );
+
+            observer.observe(mainSection);
+        }
+    }, []);
 
     return (
         <div className="container mx-auto py-4 relative">

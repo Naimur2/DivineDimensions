@@ -1,18 +1,68 @@
-import img2 from "../assets/images/img2.png";
+import FramedImage from "src/layouts/FramedImage";
+import img2 from "../assets/images/devine.png";
 import divinePods from "../assets/svgs/divine-pods.svg";
+import React from "react";
+import styled from "styled-components";
 
 export default function DivinePods() {
+    // circular transition animation
+
+    const cardRefs = React.useRef<HTMLDivElement[]>([]);
+    const [currentCard, setCurrentCard] = React.useState(0);
+
+    const [timer, setTimer] = React.useState(0);
+
+    React.useEffect(() => {
+        const interval = setInterval(() => {
+            setTimer((prev) => prev + 1);
+            if (timer === 8000) {
+                setTimer(0);
+            }
+        }, 1000);
+
+        return () => {
+            clearInterval(interval);
+        };
+    }, []);
+
     return (
         <section
             id="divine-pod"
             className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] px-10 py-16 xl:py-28 gap-10 devine-pods-bg"
         >
-            <div data-aos="zoom-out-right">
-                <img
-                    src={img2}
-                    alt=""
-                    className="object-contain w-full h-full "
-                />
+            <div className="min-h-[34rem] max-w-xl ">
+                <div className="relative top-1">
+                    <StyledFrame
+                        className={`frame-item1 `}
+                        img={img2}
+                        alt="divinePods"
+                        ref={(el) => {
+                            if (el && !cardRefs.current.includes(el)) {
+                                cardRefs.current.push(el);
+                            }
+                        }}
+                    />
+                    <StyledFrame
+                        className="frame-item2"
+                        img={img2}
+                        alt="divinePods"
+                        ref={(el) => {
+                            if (el && !cardRefs.current.includes(el)) {
+                                cardRefs.current.push(el);
+                            }
+                        }}
+                    />
+                    <StyledFrame
+                        className="frame-item3"
+                        img={img2}
+                        alt="divinePods"
+                        ref={(el) => {
+                            if (el && !cardRefs.current.includes(el)) {
+                                cardRefs.current.push(el);
+                            }
+                        }}
+                    />
+                </div>
             </div>
             <div
                 data-aos="zoom-out-left"
@@ -33,3 +83,9 @@ export default function DivinePods() {
         </section>
     );
 }
+
+interface StyledFrameProps {
+    translateX?: string;
+}
+
+const StyledFrame = styled(FramedImage)<StyledFrameProps>``;
