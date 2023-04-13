@@ -58,7 +58,7 @@ export default function App() {
         <div className="container mx-auto py-4 relative">
             <Role className="-mb-6 lg:-mb-3" />
             <main
-                className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design main-section circ-animation`}
+                className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design main-section circ-animation scrollbar-hide`}
                 ref={mainSectionRef}
             >
                 <section

@@ -109,18 +109,21 @@
     }
 
     .circ-animation {
-        animation: circular-page-open 1s ease-out forwards 0.5s;
-        -moz-animation: circular-page-open 1s ease-out forwards 0.5s;
-        transform-origin: 50% 0;
-        transform: perspective(10px) scaleY(0);
+        animation: circular-page-open 6s ease-in-out both 2s;
+        -moz-animation: circular-page-open 6s ease-in-out both 2s;
+        -webkit-animation: circular-page-open 6s ease-in-out both 2s;
+        max-height: 0px;
+        overflow: hidden;
     }
 
     @keyframes circular-page-open {
         0% {
-            transform: perspective(10px) scaleY(0);
+            max-height: 0vh;
+            overflow: hidden;
         }
         100% {
-            transform: perspective(1000px) scaleY(1);
+            max-height: 10000vh;
+            overflow: visible;
         }
     }
 
@@ -137,7 +140,7 @@
         z-index: 10;
         width: 40%;
         height: 15rem;
-        transform: translate(10%, 40%);
+        transform: translate(10%, 35%);
 
         transition: all 0.3s ease-in-out;
     }
@@ -155,6 +158,7 @@
         transition: all 0.3s ease-in-out;
     }
     .frame-item1 {
+        @apply h-[35rem];
         position: absolute;
         top: 0;
         left: 0;
@@ -162,7 +166,7 @@
         bottom: 0;
         z-index: 30;
         width: 80%;
-        height: 35rem;
+
         transform: translateX(25%);
         transition: all 0.3s ease-in-out;
     }
