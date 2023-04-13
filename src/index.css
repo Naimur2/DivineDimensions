@@ -135,9 +135,9 @@
         right: 0;
         bottom: 0;
         z-index: 10;
-        width: 15rem;
+        width: 40%;
         height: 15rem;
-        transform: translate(6rem, 8rem);
+        transform: translate(10%, 40%);
 
         transition: all 0.3s ease-in-out;
     }
@@ -148,10 +148,10 @@
         right: 0;
         bottom: 0;
         z-index: 20;
-        width: 25rem;
+        width: 60%;
         height: 25rem;
 
-        transform: translateX(10rem) translateY(2rem);
+        transform: translateX(20%) translateY(10%);
         transition: all 0.3s ease-in-out;
     }
     .frame-item1 {
@@ -161,9 +161,9 @@
         right: 0;
         bottom: 0;
         z-index: 30;
-        width: 35rem;
+        width: 80%;
         height: 35rem;
-        transform: translateX(15rem);
+        transform: translateX(25%);
         transition: all 0.3s ease-in-out;
     }
 

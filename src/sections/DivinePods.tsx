@@ -28,9 +28,9 @@ export default function DivinePods() {
     return (
         <section
             id="divine-pod"
-            className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] px-10 py-16 xl:py-28 gap-10 devine-pods-bg"
+            className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] px-10 py-28 xl:py-28 gap-16 xl:gap-10 devine-pods-bg"
         >
-            <div className="min-h-[34rem] max-w-xl ">
+            <div className="min-h-[28rem] max-w-xl ">
                 <div className="relative top-1">
                     <StyledFrame
                         className={`frame-item1 `}
