@@ -59,7 +59,7 @@ export default function App() {
             <Role className="-mb-6 lg:-mb-3" />
             <main
                 className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative top-design main-section
-                overflow-x-hidden 2xl:overflow-x-auto
+                overflow-x-hidden
                  circ-animation scrollbar-hide`}
                 ref={mainSectionRef}
             >

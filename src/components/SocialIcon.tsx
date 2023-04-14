@@ -9,6 +9,7 @@ import book from "../assets/svgs/book.svg";
 import youtube from "../assets/svgs/youtube.svg";
 import reddit from "../assets/svgs/reddit.svg";
 import facebook from "../assets/svgs/facebook.svg";
+import linkedin from "../assets/svgs/linkedin.svg";
 
 const icons = {
     discord,
@@ -20,6 +21,7 @@ const icons = {
     youtube,
     reddit,
     facebook,
+    linkedin,
 };
 
 interface Props {

@@ -14,8 +14,8 @@ export default function BusinessOppurtinity() {
     return (
         <section id="usecases" className="py-28 business-opp">
             <SectionHeader
-                title="Bussiness Opportunities of Divine Dimension"
-                className="my-20 grid grid-cols-[1fr,3fr,1fr]"
+                title="Business Opportunities"
+                className="my-20 grid grid-cols-3"
             />
             <div className="flex flex-wrap justify-center gap-6 px-8">
                 {images.map((image, index) => (

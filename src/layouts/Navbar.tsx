@@ -14,9 +14,9 @@ export default function Navbar() {
                 <li className="nav-item">
                     <a
                         target="_blank"
-                        href="https://docs.divinedimension.io/introduction/divine-dimension"
+                        href="#tourism"
                     >
-                        Docs
+                        HERITAGE
                     </a>
                 </li>
                 <li className="nav-item">
@@ -26,7 +26,7 @@ export default function Navbar() {
                     <a href="#usecases">Usecases</a>
                 </li>
                 <li className="nav-item">
-                    <a href="#divine-pod">Divine Pod</a>
+                    <a href="#divine-pod">4D POD</a>
                 </li>
                 <li className="nav-item">
                     <a href="#tourism">Tourism</a>

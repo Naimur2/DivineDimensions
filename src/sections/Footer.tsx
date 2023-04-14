@@ -16,7 +16,10 @@ const socialIcons = [
         href: "https://www.youtube.com/channel/UCGmSvLWGKiFvzjZHBDG686Q",
     },
     { icon: "reddit", href: "https://www.reddit.com/r/divinedimension" },
-    { icon: "facebook" },
+    {
+        icon: "linkedin",
+        href: "https://www.linkedin.com/company/divinedimension",
+    },
 ];
 
 export default function Footer() {

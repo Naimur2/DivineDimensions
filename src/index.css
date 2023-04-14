@@ -185,4 +185,7 @@
         transform: translate(16rem, 8rem) scale(1.2);
         opacity: 0;
     }
+    .my-slide-component img {
+        @apply w-full h-full object-contain !important;
+    }
 }

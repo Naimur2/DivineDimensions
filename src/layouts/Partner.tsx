@@ -2,8 +2,9 @@ import aptos from "src/assets/svgs/partners/1.svg";
 import unity from "src/assets/svgs/partners/2.svg";
 import sigma from "src/assets/svgs/partners/3.svg";
 import investors from "src/assets/svgs/partners/4.svg";
+import etherium from "src/assets/svgs/partners/5.svg";
 
-const icons = { aptos, unity, sigma, investors };
+const icons = { aptos, unity, sigma, investors, etherium };
 
 interface PartnerProps {
     icon: keyof typeof icons;
