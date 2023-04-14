@@ -15,7 +15,7 @@ export default function ResponsiveCarousel({
 }: {
     data: CardProps[];
 }) {
-    const ref = React.useRef();
+    const ref = React.useRef<StackedCarousel>();
     const { isLessThan } = useWindow();
 
     React.useEffect(() => {
@@ -64,9 +64,11 @@ export default function ResponsiveCarousel({
 // Very import to memoize your Slide component otherwise there might be performance issue
 // At minimum your should do a simple React.memo(SlideComponent)
 // If you want the absolute best performance then pass in a custom comparator function like below
-export const Card = React.memo(function (props) {
-    const { data, dataIndex } = props;
-    const { cover } = data[dataIndex];
+export const Card = React.memo(function (props: {
+    data: CardProps[];
+    dataIndex: number;
+}) {
+    const { cover } = props?.data[props?.dataIndex];
     const { isLessThan } = useWindow();
 
     return (
