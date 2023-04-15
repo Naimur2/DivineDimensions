@@ -4,27 +4,21 @@ import ResponsiveCarousel from "src/layouts/ResponsiveStackedCarousel";
 import styled from "styled-components";
 import divinePods from "../assets/svgs/divine-pods.svg";
 import carouselImage from "src/assets/svgs/carouselimage.svg";
+import carouselImage2 from "src/assets/svgs/slide2-image/1.svg";
+import carouselImage3 from "src/assets/svgs/slide2-image/2.svg";
 
 export const data = [
     {
-        cover: carouselImage,
+        cover: carouselImage2,
         title: "Interstaller",
     },
     {
-        cover: carouselImage,
+        cover: carouselImage3,
         title: "Inception",
     },
     {
         cover: carouselImage,
         title: "Blade Runner 2049",
-    },
-    {
-        cover: carouselImage,
-        title: "Icon man 3",
-    },
-    {
-        cover: carouselImage,
-        title: "Venom",
     },
 ];
 

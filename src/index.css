@@ -109,9 +109,9 @@
     }
 
     .circ-animation {
-        animation: circular-page-open 6s ease-in-out both 2s;
-        -moz-animation: circular-page-open 6s ease-in-out both 2s;
-        -webkit-animation: circular-page-open 6s ease-in-out both 2s;
+        animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
+        -moz-animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
+        -webkit-animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
         max-height: 0px;
         overflow: hidden;
     }

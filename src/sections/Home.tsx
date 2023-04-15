@@ -1,28 +1,25 @@
+import carouselImage4 from "src/assets/svgs/c2.svg";
 import ResponsiveCarousel from "src/layouts/ResponsiveStackedCarousel";
-import img1 from "../assets/images/img1.png";
-
-import carouselImage from "src/assets/svgs/c2.svg";
+import carouselImage1 from "../assets/svgs/slide1-image/1.svg";
+import carouselImage2 from "../assets/svgs/slide1-image/2.svg";
+import carouselImage3 from "../assets/svgs/slide1-image/3.svg";
 
 export const data = [
     {
-        cover: carouselImage,
+        cover: carouselImage1,
         title: "Interstaller",
     },
     {
-        cover: carouselImage,
+        cover: carouselImage2,
         title: "Inception",
     },
     {
-        cover: carouselImage,
+        cover: carouselImage3,
         title: "Blade Runner 2049",
     },
     {
-        cover: carouselImage,
+        cover: carouselImage4,
         title: "Icon man 3",
-    },
-    {
-        cover: carouselImage,
-        title: "Venom",
     },
 ];
 
@@ -33,7 +30,6 @@ export default function Home() {
                 className="
                 w-full max-w-[calc(100vw-10rem)]
                 "
-                
             >
                 <ResponsiveCarousel data={data} />
             </div>
