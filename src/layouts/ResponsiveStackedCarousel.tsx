@@ -40,7 +40,7 @@ export default function ResponsiveCarousel({
     const getSliderHeight = () => {
         if (isLessThan("lg")) return 300;
         if (isLessThan("md")) return 280;
-        if (isLessThan("sm")) return 200;
+        if (isLessThan("sm")) return 190;
         return 450;
     };
 

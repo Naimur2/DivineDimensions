@@ -4,7 +4,7 @@ import tokenEconomics2 from "src/assets/images/token-economics-2.png";
 
 export default function TokenEconomics() {
     return (
-        <section id="dime" className="py-10 xl:py-28 token-eco-bg">
+        <section id="dime" className="py-6 sm:py-10 xl:py-28 token-eco-bg">
             <div className="mb-20">
                 <SectionHeader
                     title="Token Economics"
