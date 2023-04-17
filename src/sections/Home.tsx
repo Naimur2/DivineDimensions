@@ -28,7 +28,7 @@ export default function Home() {
         <article className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] p-10 gap-10">
             <div
                 className="
-                w-full max-w-[calc(100vw-10rem)]
+                w-full max-w-[calc(100vw-1rem)]
                 "
             >
                 <ResponsiveCarousel data={data} />

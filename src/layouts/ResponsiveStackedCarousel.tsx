@@ -16,7 +16,7 @@ export default function ResponsiveCarousel({
     data: CardProps[];
 }) {
     const ref = React.useRef<StackedCarousel>();
-    const { isLessThan } = useWindow();
+    const { isLessThan, windowSize } = useWindow();
 
     React.useEffect(() => {
         const interval = setInterval(() => {
@@ -27,6 +27,22 @@ export default function ResponsiveCarousel({
             clearInterval(interval);
         };
     }, []);
+
+    const getSliderWidth = (parentWidth: number) => {
+        if (parentWidth < 200) return 150;
+        if (parentWidth < 400) return 200;
+        if (parentWidth < 500) return 250;
+        if (parentWidth < 800) return 300;
+        if (parentWidth < 1440) return 550;
+        return 800;
+    };
+
+    const getSliderHeight = () => {
+        if (isLessThan("lg")) return 300;
+        if (isLessThan("md")) return 280;
+        if (isLessThan("sm")) return 200;
+        return 450;
+    };
 
     return (
         <div style={{ width: "100%", position: "relative" }}>
@@ -44,9 +60,9 @@ export default function ResponsiveCarousel({
                         <StackedCarousel
                             ref={carouselRef}
                             slideComponent={Card}
-                            slideWidth={parentWidth < 800 ? 200 : 550}
+                            slideWidth={getSliderWidth(parentWidth)}
                             carouselWidth={parentWidth}
-                            height={isLessThan("lg") ? 300 : 450}
+                            height={getSliderHeight()}
                             data={data}
                             currentVisibleSlide={currentVisibleSlide}
                             maxVisibleSlide={5}

@@ -12,11 +12,11 @@ const images = [image1, image2, image3, image4, image5];
 
 export default function CulturalEthnicity() {
     return (
-        <section id="tourism" className="py-16 xl:py-28 cultureBg">
+        <section id="tourism" className="py-10 xl:py-28 cultureBg">
             <div className="mb-20">
                 <SectionHeader
                     title="Cultural ethnicity without borders"
-                    className="mt-20 grid grid-cols-[1fr,3fr,1fr] xl:flex"
+                    className="mt-10 xl:mt-20 grid grid-cols-[1fr,3fr,1fr] xl:flex"
                     titleClassName="mb-4"
                 />
                 <h2

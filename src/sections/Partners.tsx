@@ -4,7 +4,7 @@ import partnersBg from "src/assets/svgs/partners-bg.svg";
 
 export default function Partners() {
     return (
-        <section className="py-28 partnersBg relative z-10 px-4">
+        <section className="py-10 xl:py-28 partnersBg relative z-10 px-4">
             <div className="relative">
                 <SectionHeader
                     title="Our Partners"

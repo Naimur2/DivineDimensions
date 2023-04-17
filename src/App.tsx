@@ -20,7 +20,7 @@ export default function App() {
         AOS.init({
             duration: 1000,
             easing: "ease-in-out",
-            offset: 120,
+            offset: 200,
         });
     }, []);
 
@@ -64,7 +64,7 @@ export default function App() {
                 ref={mainSectionRef}
             >
                 <section
-                    className={`grid gap-10 xl:gap-20 2xl:gap-28 pb-8 heroBg`}
+                    className={`grid gap-6 md:gap-8 xl:gap-20 2xl:gap-28 pb-8 heroBg`}
                 >
                     <Hero />
                     <Home />

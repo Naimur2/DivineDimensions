@@ -27,9 +27,9 @@ export default function Footer() {
         <footer className="py-8 bg-footerBg px-4">
             <SectionHeader
                 title="Social Network"
-                className="mt-20 grid grid-cols-3 place-items-center xl:flex"
+                className="mt-10 xl:mt-20 grid grid-cols-3 place-items-center xl:flex"
             />
-            <div className="grid grid-cols-3 md:grid-cols-9 p-14 lg:py-16 max-w-6xl mx-auto justify-center place-items-center">
+            <div className="grid grid-cols-3 md:grid-cols-9 p-14 py-10 xl:py-16 max-w-6xl mx-auto justify-center place-items-center">
                 {socialIcons.map((icon, index) => (
                     <SocialIcon
                         key={icon.icon}

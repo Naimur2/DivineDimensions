@@ -48,11 +48,11 @@ export default function DivinePods() {
     return (
         <section
             id="divine-pod"
-            className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] px-10 pt-28 xl:py-28 gap-16 xl:gap-10 devine-pods-bg"
+            className="grid lg:grid-cols-2 2xl:grid-cols-[2fr,1fr] px-10 py-10 xl:py-28 gap-10 devine-pods-bg"
         >
             <div
                 className="
-                w-full max-w-[calc(100vw-10rem)]
+                w-full max-w-[calc(100vw-1rem)]
                 "
             >
                 <ResponsiveCarousel data={data} />
