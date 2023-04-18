@@ -16,6 +16,8 @@ import "aos/dist/aos.css";
 export default function App() {
     const mainSectionRef = useRef<HTMLDivElement>(null);
 
+    const [isFontLoaded, setIsFontLoaded] = React.useState(false);
+
     React.useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -30,6 +32,44 @@ export default function App() {
                 AOS.refresh();
             });
         });
+    }, []);
+
+    React.useEffect(() => {
+        const loadFonts = async () => {
+            try {
+                const queenFont = new FontFace(
+                    "Queen",
+                    'url("/fonts/QueenInlineGrunge.ttf")'
+                );
+
+                const papyrusFont = new FontFace(
+                    "Papyrus",
+                    'url("/fonts/PAPYRUS.ttf") '
+                );
+
+                const fontleroyBrown = new FontFace(
+                    "FontleroyBrown",
+                    'url("/fonts/FONTLERO.otf")'
+                );
+
+                await Promise.all([
+                    queenFont.load(),
+                    papyrusFont.load(),
+                    fontleroyBrown.load(),
+                ]);
+
+                document.fonts.add(queenFont);
+                document.fonts.add(papyrusFont);
+                document.fonts.add(fontleroyBrown);
+                setIsFontLoaded(true);
+                AOS.refresh();
+            } catch (error) {
+                console.error(error);
+                setIsFontLoaded(true);
+            }
+        };
+
+        loadFonts();
     }, []);
 
     React.useEffect(() => {
@@ -59,8 +99,9 @@ export default function App() {
             <Role className="-mb-6 lg:-mb-3" />
             <main
                 className={`mx-6 sm:mx-8 md:mx-10 lg:mx-14 xl:mx-20 2xl:mx-[5.65rem] relative 
+                ${isFontLoaded ? "circ-animation" : "max-h-0 overflow-hidden"}
                 
-                 circ-animation `}
+                  `}
                 ref={mainSectionRef}
             >
                 <div className="top-design main-section scrollbar-hide !overflow-x-hidden">

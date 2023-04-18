@@ -12,20 +12,20 @@
 
     @font-face {
         font-family: "Queen";
-        src: url("./assets/fonts/QueenInlineGrunge.ttf") format("truetype");
+        src: url("/fonts/QueenInlineGrunge.ttf") format("truetype");
         font-weight: 400;
         font-style: normal;
     }
 
     @font-face {
         font-family: "Papyrus";
-        src: url("./assets/fonts/PAPYRUS.ttf") format("truetype");
+        src: url("/fonts/PAPYRUS.ttf") format("truetype");
         font-weight: 400;
         font-style: normal;
     }
     @font-face {
         font-family: "FontleroyBrown";
-        src: url("./assets/fonts/FONTLERO.otf") format("opentype");
+        src: url("/fonts/FONTLERO.otf") format("opentype");
         font-weight: 400;
         font-style: normal;
     }
@@ -109,9 +109,11 @@
     }
 
     .circ-animation {
-        animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
-        -moz-animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
-        -webkit-animation: circular-page-open 6s cubic-bezier(1,0,.52,.91) both 2s;
+        animation: circular-page-open 3s cubic-bezier(1, 0, 0.52, 0.91) both 1s;
+        -moz-animation: circular-page-open 3s cubic-bezier(1, 0, 0.52, 0.91)
+            both 1s;
+        -webkit-animation: circular-page-open 3s cubic-bezier(1, 0, 0.52, 0.91)
+            both 1s;
         max-height: 0px;
         overflow: hidden;
     }
@@ -124,6 +126,22 @@
         100% {
             max-height: 10000vh;
             overflow: visible;
+        }
+    }
+
+    .animated-dimond {
+        animation: fade-in 3s ease-in-out both 3s;
+        transform: translateY(-1rem);
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
         }
     }
 
