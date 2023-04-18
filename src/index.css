@@ -130,7 +130,7 @@
     }
 
     .animated-dimond {
-        animation: fade-in 3s ease-in-out both 3s;
+        animation: fade-in 2s ease-in-out both 3s;
         transform: translateY(-1rem);
     }
 
