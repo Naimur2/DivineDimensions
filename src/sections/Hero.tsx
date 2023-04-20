@@ -4,63 +4,41 @@ import diamondBtn from "../assets/images/diamond-btn.png";
 import divineDimensions from "../assets/images/divine-dimensions.png";
 import AOS from "aos";
 
-export default function Hero() {
-    const dimondButtonRef = useRef<HTMLImageElement>(null);
-    const divineDimensionsRef = useRef<HTMLImageElement>(null);
+export default function Hero({ isAppLoaded }: { isAppLoaded: boolean }) {
+    const animatedSectionRef = useRef<HTMLImageElement>(null);
+    const mainSectionRef = useRef<HTMLImageElement>(null);
 
-    // React.useEffect(() => {
-    //     // check if the distance from window top to the top of the element is less than the window height
-    //     // if it is, then refresh the animation
+    React.useEffect(() => {
+        const toggleAnimation = () => {
+            if (animatedSectionRef.current) {
+                animatedSectionRef.current.classList.toggle("translate-y-0");
+                animatedSectionRef.current.classList.toggle("opacity-100");
+            }
+        };
 
-    //     const checkIfInView = () => {
-    //         const dimondButtonRect =
-    //             dimondButtonRef.current?.getBoundingClientRect();
-    //         const divineDimensionsRect =
-    //             divineDimensionsRef.current?.getBoundingClientRect();
-
-    //         if (dimondButtonRect && divineDimensionsRect) {
-    //             if (dimondButtonRect?.top < window.innerHeight) {
-    //                 AOS.refresh();
-    //             }
-
-    //             if (divineDimensionsRect?.top < window.innerHeight) {
-    //                 AOS.refresh();
-    //             }
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", checkIfInView);
-
-    //     return () => {
-    //         window.removeEventListener("scroll", checkIfInView);
-    //     };
-    // }, []);
+        window.addEventListener("scroll", toggleAnimation);
+    }, [isAppLoaded]);
 
     return (
-        <article className="p-4">
+        <article className="p-4" ref={mainSectionRef}>
             <Navbar />
-            <div className="flex flex-col items-center py-8">
-                <div
-                    data-aos="fade-down"
-                    data-aos-delay="2000"
-                    data-aos-duration="1000"
-                >
+            <div
+                className={`flex flex-col items-center py-8 translate-y-[-100%] opacity-0  ${
+                    isAppLoaded ? "devinedimensLogo" : ""
+                } `}
+                ref={animatedSectionRef}
+            >
+                <div data-aos="fade-down">
                     <img
                         src={diamondBtn}
                         alt="dm"
                         className="w-[10rem]  lg:w-[16rem]  2xl:w-[25rem]"
-                        data-aos="fade-up"
                     />
                 </div>
                 <img
-                    data-aos="fade-up"
-                    data-aos-delay="2000"
-                    data-aos-duration="1000"
                     src={divineDimensions}
                     alt="divine dimensions"
-                    className="w-[24rem] lg:w-[30rem]  2xl:w-[40rem] object-contain"
-                    ref={divineDimensionsRef}
-                    data-aos-offset="-500"
+                    className={`w-[24rem] lg:w-[30rem]  2xl:w-[40rem] object-contain`}
                 />
 
                 <p

@@ -2,11 +2,11 @@ import ce1 from "src/assets/images/ce1.png";
 import ce2 from "src/assets/images/ce2.png";
 import SectionHeader from "src/layouts/SectionHeader";
 
-import image1 from "src/assets/svgs/cultural/1.svg";
-import image2 from "src/assets/svgs/cultural/2.svg";
-import image3 from "src/assets/svgs/cultural/3.svg";
-import image4 from "src/assets/svgs/cultural/4.svg";
-import image5 from "src/assets/svgs/cultural/5.svg";
+import image1 from "src/assets/images/culture/1.png";
+import image2 from "src/assets/images/culture/2.png";
+import image3 from "src/assets/images/culture/3.png";
+import image4 from "src/assets/images/culture/4.png";
+import image5 from "src/assets/images/culture/5.png";
 
 const images = [image1, image2, image3, image4, image5];
 

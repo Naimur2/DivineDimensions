@@ -21,7 +21,7 @@ export default function Partners() {
 
                 <SectionHeader
                     title="Our Investors"
-                    className="mt-24 grid grid-cols-[1fr,auto,1fr]"
+                    className="mt-24 grid grid-cols-[1fr,auto,1fr] xl:flex"
                 />
                 <div className="flex items-center justify-center gap-6 my-6">
                     <Partner icon="investors" />

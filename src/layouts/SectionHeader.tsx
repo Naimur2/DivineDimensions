@@ -15,7 +15,7 @@ export default function SectionHeader({
     return (
         <div
             data-aos="fade-up"
-            className={`grid grid-cols-[1fr,auto,1fr] items-center justify-center gap-10 ${className} mb-4`}
+            className={`grid grid-cols-[1fr,auto,1fr] xl:flex items-center justify-center gap-10 ${className} mb-4`}
         >
             <img className="inline-block" src={headerLeft} alt="" />
             <h1

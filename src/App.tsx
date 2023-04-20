@@ -24,7 +24,7 @@ export default function App() {
             easing: "ease-in-out",
             offset: 200,
         });
-    }, []);
+    }, [isFontLoaded]);
 
     React.useEffect(() => {
         document.querySelectorAll("img").forEach((img) => {
@@ -62,7 +62,6 @@ export default function App() {
                 document.fonts.add(papyrusFont);
                 document.fonts.add(fontleroyBrown);
                 setIsFontLoaded(true);
-                AOS.refresh();
             } catch (error) {
                 console.error(error);
                 setIsFontLoaded(true);
@@ -108,7 +107,7 @@ export default function App() {
                     <section
                         className={`grid gap-6 md:gap-8 xl:gap-20 2xl:gap-28 pb-8 heroBg`}
                     >
-                        <Hero />
+                        <Hero isAppLoaded={isFontLoaded} />
                         <Home />
                     </section>
                     <BusinessOppurtinity />
