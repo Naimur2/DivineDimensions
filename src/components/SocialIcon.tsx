@@ -57,7 +57,7 @@ export default function SocialIcons({
             <img
                 src={icons[icon] ?? icons.discord}
                 alt=""
-                className="object-contain h-6 w-6 xl:h-8 xl:w-8"
+                className="object-contain h-4 w-4 xl:h-6 xl:w-6 2xl:h-8 2xl:w-8"
             />
         </a>
     );

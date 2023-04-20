@@ -16,12 +16,12 @@ export default function CulturalEthnicity() {
             <div className="mb-20">
                 <SectionHeader
                     title="Cultural ethnicity without borders"
-                    className="mt-10 xl:mt-20 grid grid-cols-[1fr,3fr,1fr] xl:flex"
+                    className="mt-10 xl:mt-20 grid grid-cols-[1fr,auto,1fr]"
                     titleClassName="mb-4"
                 />
                 <h2
                     data-aos="fade-up"
-                    className="text-[#E2B588] text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[2.5rem] font-Papyrus text-center 
+                    className="text-[#E2B588] text-lg md:text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[2.5rem] font-Papyrus text-center 
                     max-w-[30ch] mx-auto 2xl:max-w-none"
                 >
                     Discover diverse traditional culture with Divine Dimension

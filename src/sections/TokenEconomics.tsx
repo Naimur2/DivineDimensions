@@ -12,7 +12,7 @@ export default function TokenEconomics() {
                 />
                 <h2
                     data-aos="fade-up"
-                    className="text-[#E2B588] text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[2.5rem] font-Papyrus text-center mt-4"
+                    className="text-[#E2B588] text-lg md:text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[2.5rem] font-Papyrus text-center mt-4"
                 >
                     Introducing first 3D Asset class
                 </h2>

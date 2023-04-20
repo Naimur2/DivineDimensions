@@ -7,7 +7,7 @@ export default function Partners() {
             <div className="relative">
                 <SectionHeader
                     title="Our Partners"
-                    className="grid grid-cols-3 xl:flex"
+                    className="grid grid-cols-[1fr,auto,1fr] xl:flex"
                 />
                 <div className="flex items-center justify-center gap-6 my-6">
                     <Partner icon="aptos" />
@@ -16,11 +16,12 @@ export default function Partners() {
                 </div>
                 <div className="flex items-center justify-center gap-6 my-6">
                     <Partner icon="etherium" />
+                    <Partner icon="partner6" />
                 </div>
 
                 <SectionHeader
                     title="Our Investors"
-                    className="mt-24 grid grid-cols-3 xl:flex"
+                    className="mt-24 grid grid-cols-[1fr,auto,1fr]"
                 />
                 <div className="flex items-center justify-center gap-6 my-6">
                     <Partner icon="investors" />

@@ -15,11 +15,11 @@ export default function SectionHeader({
     return (
         <div
             data-aos="fade-up"
-            className={`flex items-center justify-center gap-10 ${className}`}
+            className={`grid grid-cols-[1fr,auto,1fr] items-center justify-center gap-10 ${className} mb-4`}
         >
             <img className="inline-block" src={headerLeft} alt="" />
             <h1
-                className={`text-[#C69C6D] text-4xl lg:text-7xl inline-block font-FontleroyBrown text-center ${titleClassName}`}
+                className={`text-[#C69C6D] text-3xl sm:text-4xl lg:text-7xl mb-0 inline-block font-FontleroyBrown text-center ${titleClassName}`}
             >
                 {title}
             </h1>

@@ -25,11 +25,6 @@ export const data = [
 export default function DivinePods() {
     // circular transition animation
 
-    const cardRefs = React.useRef<HTMLDivElement[]>([]);
-    const [currentCard, setCurrentCard] = React.useState(0);
-
-    const carouselRef = React.useRef<HTMLDivElement>(null);
-
     const [timer, setTimer] = React.useState(0);
 
     React.useEffect(() => {
@@ -59,17 +54,17 @@ export default function DivinePods() {
             </div>
 
             <div
-                data-aos="zoom-out-left"
+                data-aos="zoom-in"
                 className="flex flex-col justify-center items-center px-6 gap-4 row-start-1 lg:row-start-auto"
             >
                 <div className="grid gap-2">
-                    <h1 className="text-[#E2B588] text-4xl lg:text-6xl text-center">
+                    <h1 className="text-[#E2B588] text-3xl md:text-4xl lg:text-6xl text-center">
                         Introducing Divine Pods
                     </h1>
                     <img src={divinePods} alt="divinePods" />
                 </div>
                 <div className="grid gap-4">
-                    <h2 className="text-[#E2B588] text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[3.5rem] font-Papyrus text-center ">
+                    <h2 className="text-[#E2B588] text-lg md:text-xl lg:text-2xl 2xl:text-[1.75rem] 2xl:leading-[3.5rem] font-Papyrus text-center ">
                         Experience the world beauty in 4D like never before
                     </h2>
                 </div>
